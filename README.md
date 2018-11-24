@@ -1,6 +1,6 @@
 # Restaurant reviews-app-stage-1
 - This is an web application for reviewing restaurants. It utilizes a service worker so that when the user visits the 
-  page for the first time, content is cached for later use.
+  page for the first time, content is cached for offline use.
 
 
 ### How to get started
