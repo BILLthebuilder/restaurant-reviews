@@ -1,3 +1,7 @@
+/*The following resources have been helpful in completing the project:
+*https://developers.google.com/web/fundamentals/primers/service-workers/
+*https://matthewcranford.com/restaurant-reviews-app-walkthrough-part-4-service-workers/
+*/
 
 //Collecting all the app's assets in an array for caching
 const cacheData = [
