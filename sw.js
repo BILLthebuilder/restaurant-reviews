@@ -24,7 +24,7 @@ const cacheData = [
 
 //Checking if the serviceworker is installed and then caching the app's assets from the array above
 self.addEventListener('install', e=>{
-	e.waitUntill(
+	e.waitUntil(
 			caches.open('v1').then(cache=>{
 				return cache.addAll(cacheData);
 			})
