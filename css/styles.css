@@ -113,13 +113,9 @@ nav h1 a {
 .filter-options {
   width: 100%;
   padding: 15px 0;
-  height: 50px;
+  height: 100%;
   background-color: #3397DB;
   align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
 }
 .filter-options h2 {
   color: white;
