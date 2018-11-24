@@ -1,10 +1,10 @@
 # Restaurant reviews-app-stage-1
 - This is an web application for reviewing restaurants. It utilizes a service worker so that when the user visits the 
-  page for the first time, content is cached for later use.
+  page for the first time, content is cached for offline use.
 
 
 ### How to get started
-1. First clone the repo `git clone https://github.com/BILLthebuilder/restaurant-reviews-stage-1.git` to a folder on your pc
+1. First clone the repo `git clone https://github.com/BILLthebuilder/restaurant-reviews-stage-1.git` to your computer
 
 2. In the project folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer.
 
