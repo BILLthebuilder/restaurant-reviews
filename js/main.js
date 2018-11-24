@@ -1,8 +1,7 @@
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker
-  .register('/sw.js')
-  .catch(function(err) {
-    console.error(err);
+  navigator.serviceWorker.register('/sw.js')
+  .catch(err=> {
+    console.log(err);
   });
 }
 
