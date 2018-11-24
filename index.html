@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <!-- viewport  tag to ensure the webpage is displayed correctly on all devices -->
@@ -24,10 +24,10 @@
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select role="tablist" tabindex="2" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select aria-label="Neighborhoods-select" role="tablist" tabindex="2" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select role="tablist" tabindex="2" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select aria-label="Cuisines-select" role="tablist" tabindex="2" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>
