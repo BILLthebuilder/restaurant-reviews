@@ -4,7 +4,7 @@
 
 
 ### How to get started
-1. First clone the repo `git clone https://github.com/BILLthebuilder/restaurant-reviews-stage-1.git` to a folder on your pc
+1. First clone the repo `git clone https://github.com/BILLthebuilder/restaurant-reviews-stage-1.git` to your computer
 
 2. In the project folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer.
 
