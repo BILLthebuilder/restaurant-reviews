@@ -1,6 +1,5 @@
-/*The following resources have been helpful in completing the project:
+/*The following resource have been helpful in completing the project:
 *https://developers.google.com/web/fundamentals/primers/service-workers/
-*https://matthewcranford.com/restaurant-reviews-app-walkthrough-part-4-service-workers/
 */
 
 //Collecting all the app's assets in an array for caching
@@ -23,38 +22,38 @@ const cacheData = [
 	'/img/8.jpg',
 	'/img/9.jpg',
 	'/img/10.jpg'
-	
+
 ];
 
 //Checking if the serviceworker is installed and then caching the app's assets from the array above
-self.addEventListener('install', e=>{
+self.addEventListener('install', e => {
 	e.waitUntil(
-			caches.open('v1').then(cache=>{
-				return cache.addAll(cacheData);
-			})
-		);
+		caches.open('v1').then(cache => {
+			return cache.addAll(cacheData);
+		})
+	);
 });
 
 //add fetch event listener to return or update cached responses
-self.addEventListener('fetch', e=> {
-    e.respondWith(
-        caches.match(e.request).then(response=> {
-            if (response) {
-                return response;
-            }
-            else {
-                return fetch(e.request)
-                .then(response=> {
-                    const responseClone = response.clone(); 
-                    caches.open('v1').then(cache=> {
-                        cache.put(e.request, responseClone);
-                    })
-                    return response;
-                })
-                .catch(function(err) {
-                    console.error(err);
-                });
-            }
-        })
-    );
+self.addEventListener('fetch', e => {
+	e.respondWith(
+		caches.match(e.request).then(response => {
+			if (response) {
+				return response;
+			}
+			else {
+				return fetch(e.request)
+					.then(response => {
+						const responseClone = response.clone();
+						caches.open('v1').then(cache => {
+							cache.put(e.request, responseClone);
+						})
+						return response;
+					})
+					.catch(function (err) {
+						console.error(err);
+					});
+			}
+		})
+	);
 });
