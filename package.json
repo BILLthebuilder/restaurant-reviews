@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-reviews",
+  "version": "1.0.0",
+  "description": "A web app to review restaurants",
+  "main": "app.js",
+  "repository": "git@github.com:BILLthebuilder/restaurant-reviews.git",
+  "author": "https://github.com/BILLthebuilder",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
